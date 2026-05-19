@@ -6675,10 +6675,23 @@ figure {
 
 .on-hover-line {
   background-color: var(--color--black);
-  width: 100%;
+  width: 0%;
   height: 1px;
   position: absolute;
   inset: auto 0% 0%;
+}
+
+/* Preserve hidden Webflow commerce state that was moved from inline style */
+.w-commerce-commercecartopenlinkcount,
+.w-commerce-commercecartcontainerwrapper,
+.w-commerce-commercecartform,
+.w-commerce-commercecartquickcheckoutbutton,
+.w-commerce-commercecartapplepaybutton,
+.w-commerce-commercebuynowbutton,
+.w-commerce-commercecarterrorstate,
+.w-commerce-commerceaddtocartoutofstock,
+.w-commerce-commerceaddtocarterror {
+  display: none !important;
 }
 
 .blog-read-more-button {
